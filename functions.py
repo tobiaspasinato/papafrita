@@ -2,6 +2,10 @@ import pygame
 import os
 import math
 
+"""
+funcion que toma de parametros el path completo lo divide en columnas y filas y lo transforma en lista de imagenes
+puede dar vuelta la imagen si se necesita, por defecto esta sin esta caracteristica
+"""
 def get_animacion(path : str, columnas : int, filas : int, flip = False):
     lista = []
     surface_imagen = pygame.image.load(path)
