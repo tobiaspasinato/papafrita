@@ -17,3 +17,4 @@ def get_animacion(path : str, columnas : int, filas : int, flip = False):
                 surface_fotograma = pygame.transform.flip(surface_fotograma, True, False)
             lista.append(surface_fotograma)
     return lista
+
