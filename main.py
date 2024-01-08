@@ -1,5 +1,6 @@
 import pygame
 from functions import *
+from clases import player
 
 pygame.init() #Se inicializa pygame
 
