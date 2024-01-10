@@ -23,3 +23,11 @@ def get_animacion(path : str, columnas : int, filas : int, flip = False):
             lista.append(surface_fotograma)
     return lista
 
+def get_animacion_player(path,cantidad , flip = False):
+    lista = []
+    for num in range(cantidad):
+        imagen = pygame.image.load(f"{path}{num+1}.png")
+        if flip == True:
+            imagen = pygame.transform.flip(imagen, True, False)
+        lista.append(imagen)
+    return lista
