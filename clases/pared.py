@@ -13,5 +13,6 @@ class pared:
     def crear_muro(self, screen):
         pygame.draw.rect(screen, (0, 0, 0), self.rect)
     
-    def crear_collision(self, item):
-        pass
+    def crear_collision(self, item, x, y):
+        if item.rect.colliderect(self.rect):
+            item.control(x, y)
