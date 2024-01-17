@@ -12,7 +12,7 @@ pygame.display.set_caption("Cuphead trucho") # Nombre de la pestaña
 imagen_level1 = pygame.image.load("papafrita/img/fondo.jpeg") # Cargar imagen del fondo
 level1_img = pygame.transform.scale(imagen_level1, (LARGO_PANTALLA, ANCHO_PANTALLA))
 running = True
-direccion = True
+direccion = False
 
 player1 = player(500,500)
 
