@@ -5,7 +5,7 @@ from clases.player import player
 from pygame.locals import *
 
 milis = pygame.time.Clock()
-
+#holis
 pygame.init() #Se inicializa pygame
 screen = pygame.display.set_mode([1150, 750]) #Se crea una ventana
 pygame.display.set_caption("Cuphead trucho") # Nombre de la pestaña
