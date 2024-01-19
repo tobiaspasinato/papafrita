@@ -19,6 +19,12 @@ class player:
         self.move_x = x
         self.move_y = y
     
+    def jump(self):
+        self.move_y = self.move_y - 100
+    
+    def gravedad(self):
+        self.move_y = self.move_y - 10
+    
     def upgrade(self):
         if self.frame < len(self.animation) - 1:
             self.frame += 1
