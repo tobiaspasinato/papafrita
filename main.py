@@ -15,7 +15,7 @@ level1_img = pygame.transform.scale(imagen_level1, (LARGO_PANTALLA, ANCHO_PANTAL
 running = True
 direccion = False
 
-player1 = player(500,500)
+player1 = player(500,0)
 pared1 = pared(0, 660, 1160, 1)
 
 while running:
@@ -35,13 +35,13 @@ while running:
             player1.control(10, 0)
             accion_personaje = "walk"
             direccion = True
-        if pressed_keys[K_SPACE]:
-            #player1.jump()
+        if pressed_keys[K_w]:
+            player1.jump()
             pass
     
     screen.fill((0, 0, 0))# Se pinta el fondo de la ventana
     screen.blit(level1_img,(0,0)) # Ubicacion del fondo
-    #pared1.crear_muro(screen, player1, 0, -10)
+    pared1.crear_muro(screen, player1, 0, -10)
     player1.gravedad()
     player1.upgrade()
     player1.dibujar(screen, accion_personaje, direccion)

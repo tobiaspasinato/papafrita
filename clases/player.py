@@ -23,7 +23,7 @@ class player:
         self.move_y = self.move_y - 100
     
     def gravedad(self):
-        self.move_y = self.move_y - 10
+        self.move_y = self.move_y + 10
     
     def upgrade(self):
         if self.frame < len(self.animation) - 1:
