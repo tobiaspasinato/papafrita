@@ -10,7 +10,7 @@ class pared:
         self.height = height
         self.rect = pygame.Rect((self.left, self.top), (self.width, self.height))
     
-    def crear_muro(self, screen, item, x, y):
+    def crear_muro(self, screen, item, y):
         pygame.draw.rect(screen, (0, 0, 0), self.rect)
         if item.rect.colliderect(self.rect):
-            item.control(x, y)
+            item.control_y(y)

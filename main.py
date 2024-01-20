@@ -36,12 +36,12 @@ while running:
             accion_personaje = "walk"
             direccion = True
         if pressed_keys[K_w]:
-            player1.jump()
-            pass
+            player1.control(0, -100)
+            print("asd")
     
     screen.fill((0, 0, 0))# Se pinta el fondo de la ventana
+    pared1.crear_muro(screen, player1, -10)
     screen.blit(level1_img,(0,0)) # Ubicacion del fondo
-    pared1.crear_muro(screen, player1, 0, -10)
     player1.gravedad()
     player1.upgrade()
     player1.dibujar(screen, accion_personaje, direccion)
