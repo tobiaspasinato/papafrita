@@ -37,7 +37,6 @@ while running:
             direccion = True
         if pressed_keys[K_w]:
             player1.control(0, -100)
-            print("asd")
     
     screen.fill((0, 0, 0))# Se pinta el fondo de la ventana
     pared1.crear_muro(screen, player1, -10)
