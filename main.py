@@ -41,7 +41,6 @@ while running:
     screen.fill((0, 0, 0))# Se pinta el fondo de la ventana
     pared1.crear_muro(screen, player1, -10)
     screen.blit(level1_img,(0,0)) # Ubicacion del fondo
-    pared1.crear_muro(screen, player1, -10)
     player1.gravedad()
     player1.upgrade()
     player1.dibujar(screen, accion_personaje, direccion)
